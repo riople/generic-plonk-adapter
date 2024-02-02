@@ -1,0 +1,11 @@
+[package]
+name = "cli"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+powdr = { git = "https://github.com/powdr-labs/powdr", rev = "03bade27e311251c93b2ccf786b61c643167ab5e"  }
+acvm = { git = "https://github.com/noir-lang/noir",  directory = "acvm-repo/acvm" }
+clap = { version = "4.4.14", features = ["derive"] }
